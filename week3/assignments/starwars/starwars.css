@@ -8,6 +8,7 @@
   the 'queryWrapper' <div> on a row next to each other 
   */
   margin: 0 auto;
+  display: flex;
 }
 
 .dataWrapper {
@@ -20,6 +21,8 @@
   the 'dataWrapper' <div> in a 2 x 2 grid 
   */
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .dataCellLabel {
