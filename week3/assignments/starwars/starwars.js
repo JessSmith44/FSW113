@@ -8,7 +8,7 @@ let item;
 function fetchData(){
     query = document.querySelector("#queryType").value;
     item = document.querySelector("#itemID").value;
-    getFromSWAPI();
+    getFromSWAPI(query, item);
 };
 
 function getFromSWAPI() {
@@ -25,10 +25,11 @@ function getFromSWAPI() {
 // as the appropriate values from the data object to the 'dataValue1' and 
 // 'dataValue2' elements in starwars.html.
 
-function updateInfo(data){
-    document.querySelector("#dataLabel1").textContent = `Name: `;
-    document.querySelector("#dataValue1").textContent = `${data.name}`;
-    document.querySelector("#dataLabel2").textContent = `Hair Color: `;
-    document.querySelector("#dataValue2").textContent = `${data.hair_color}`;
-}
+function updateInfo(data) {
+    const keys = Object.keys(data);
+    document.querySelector("#dataLabel1").innerText = keys[0];
+    document.querySelector("#dataValue1").innerText = data[keys[0]];
+    document.querySelector("#dataLabel2").innerText = keys[5];
+    document.querySelector("#dataValue2").innerText = data[keys[5]];
+};
 //check each letter //look for missing ; . () {}
