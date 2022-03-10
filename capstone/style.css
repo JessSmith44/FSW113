@@ -1,0 +1,49 @@
+/* 
+    Create all the style definitions necessary to make your app look as close 
+    to the example as possible. You will need to use display:grid to make the 
+    bug reports display in three columns (see week 4).
+*/
+*{
+    background-color: black;
+}
+#bugform{
+    background-color: gray;
+    width: 50%;
+}
+#bugform.left{
+    width: 25%;
+}
+#bugform.right{
+    width: 50%;
+}
+#reportedBy{
+    background-color: rgb(163, 160, 160);
+    color: black;
+}
+::placeholder{
+    color: black;
+}
+.topbar{
+    justify-content: space-around;
+}
+#userinput{
+    color: black;
+}
+#submitBtn{
+    background-color: red;
+}
+#resetBtn{
+    background-color: red;
+}
+#system{
+    background-color: rgb(163, 160, 160);
+}
+#subSystem{
+    background-color: rgb(163, 160, 160);
+}
+#bugDesc{
+    background-color: rgb(163, 160, 160);
+}
+#bugDescrDiv{
+    background-color: rgb(206, 203, 203);
+}
